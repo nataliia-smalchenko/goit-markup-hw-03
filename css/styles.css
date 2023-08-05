@@ -1,0 +1,205 @@
+/* ============ VARIABLES ============= */
+
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --accent-font: 'Raleway', sans-serif;
+  --primary-brand: #4d5ae5; /* IRIS */
+  --pressed-state: #404bbf; /* OCEAN */
+  --dark: #2e2f42; /* NAVY BLUE */
+  --text: #434455; /* SLATE */
+  --subtle-text: #8e8f99; /* LIGHT SLATE */
+  --accent: #e7e9fc; /* CORNDLOWER */
+  --light: #f4f4fd; /* CLOUD */
+  --white: #ffffff;
+}
+
+/* ============ /VARIABLES ============= */
+
+/* ============ GENERAL PROPERTIES ============= */
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--white);
+  letter-spacing: 0.02em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--pressed-state);
+  color: var(--white);
+}
+
+/* ============ /GENERAL PROPERTIES ============= */
+
+/* ============ HEADER ============= */
+
+.logo {
+  text-decoration: none;
+  font-family: var(--accent-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand);
+}
+
+.logo-right-dark {
+  color: var(--dark);
+}
+
+.menu-item {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--pressed-state);
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contacts-item {
+  color: var(--text);
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--pressed-state);
+}
+
+/* ============ /HEADER ============= */
+
+/* ============ HERO SECTION ============= */
+
+.hero {
+  background-color: var(--dark);
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.button-accent {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--primary-brand);
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+
+/* ============ /HERO SECTION ============= */
+
+/* ============ BENEFITS SECTION ============= */
+
+.benefit-title {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--dark);
+  letter-spacing: 0.02em;
+}
+
+/* ============ /BENEFITS SECTION ============= */
+
+/* ============ WHAT-WE-DO, TEAM SECTIONS ============= */
+
+.what-we-do-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--dark);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+.team {
+  background-color: var(--light);
+}
+
+.team-card {
+  background-color: var(--white);
+}
+
+.team-card-name {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--dark);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.team-card-text {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* ============ /WHAT-WE-DO, TEAM SECTIONS ============= */
+
+/* ============ FOOTER ============= */
+
+.footer {
+  background-color: var(--dark);
+}
+
+.logo-right-light {
+  color: var(--light);
+}
+
+.footer-text {
+  color: var(--light);
+}
+
+/* ============ /FOOTER ============= */
+
+/* ============ PORTFOLIO WORKS ============= */
+
+.button-light {
+  background-color: var(--light);
+  color: var(--primary-brand);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.work-card-title {
+  color: var(--dark);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.work-card-text {
+  color: var(--text);
+}
+
+/* ============ PORTFOLIO WORKS ============= */
