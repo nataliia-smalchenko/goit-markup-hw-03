@@ -64,6 +64,11 @@ img {
   text-decoration: none;
 }
 
+.link:hover,
+.link:focus {
+  color: var(--pressed-state);
+}
+
 .list {
   list-style-type: none;
 }
@@ -130,6 +135,11 @@ img {
   border: 1px solid var(--accent);
 }
 
+.button-light:hover,
+.button-light:focus {
+  border: 1px solid transparent;
+}
+
 /* ============ /GENERAL PROPERTIES ============= */
 
 /* ============ HEADER ============= */
@@ -142,8 +152,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .logo {
@@ -151,7 +159,7 @@ img {
   font-family: var(--accent-font);
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand);
@@ -161,25 +169,27 @@ img {
   color: var(--dark);
 }
 
+.header-logo {
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .menu {
   display: flex;
   align-items: center;
-  column-gap: 76px;
 }
 
 .menu-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
-.menu-item {
+.menu-link {
   color: var(--dark);
   font-weight: 500;
-}
-
-.menu-item:hover,
-.menu-item:focus {
-  color: var(--pressed-state);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contacts {
@@ -188,17 +198,14 @@ img {
 
 .contacts-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
   align-items: center;
 }
 
-.contacts-item {
+.contacts-link {
   color: var(--text);
-}
-
-.contacts-item:hover,
-.contacts-item:focus {
-  color: var(--pressed-state);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* ============ /HEADER ============= */
@@ -207,9 +214,6 @@ img {
 
 .hero {
   background-color: var(--dark);
-}
-
-.hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -220,13 +224,14 @@ img {
   color: var(--white);
   text-align: center;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-button {
+  min-width: 169px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -236,14 +241,14 @@ img {
 
 /* ============ BENEFITS SECTION ============= */
 
-.benefits-container {
+.benefits {
   padding-top: 120px;
   padding-bottom: 60px;
 }
 
 .benefits-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .benefits-item {
@@ -263,14 +268,14 @@ img {
 
 /* ============ WHAT-WE-DO ============= */
 
-.what-we-do-container {
+.what-we-do {
   padding-top: 60px;
   padding-bottom: 120px;
 }
 
 .what-we-do-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .what-we-do-item {
@@ -284,16 +289,13 @@ img {
 
 .team {
   background-color: var(--light);
-}
-
-.team-container {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .team-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .team-item {
@@ -305,8 +307,11 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-item-image {
-  margin-bottom: 32px;
+.team-description {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .team-item-name {
@@ -322,7 +327,6 @@ img {
 .team-item-text {
   text-align: center;
   font-size: 16px;
-  margin-bottom: 32px;
 }
 
 /* ============ /TEAM SECTIONS ============= */
@@ -336,7 +340,7 @@ img {
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -353,14 +357,14 @@ img {
 
 /* ============ PORTFOLIO WORKS ============= */
 
-.works-container {
+.works {
   padding-top: 96px;
   padding-bottom: 120px;
 }
 
 .works-buttons-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   justify-content: center;
   margin-bottom: 72px;
 }
@@ -373,12 +377,13 @@ img {
 }
 
 .works-card {
-  border: 1px solid var(--cornflower, #e7e9fc);
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
-.works-image {
-  margin-bottom: 32px;
+.works-card-description {
+  padding: 32px 16px;
+  border: 1px solid var(--accent);
+  border-top: none;
 }
 
 .works-card-title {
@@ -388,15 +393,10 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .works-card-text {
   color: var(--text);
-  margin-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 /* ============ PORTFOLIO WORKS ============= */
